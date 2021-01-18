@@ -200,6 +200,8 @@ main {
 	height: 368px;
 	background-image: url("images/slide-1.jpg"), url("images/slide-2.jpg"), url("images/slide-3.jpg");
 	animation: slides 12s linear 3s infinite;
+	-moz-animation: slides 12s linear 3s infinite;
+	-webkit-animation: slides 12s linear 3s infinite;
 	box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.5);
 }
 
