@@ -1,0 +1,305 @@
+@font-face {
+	font-family: "Marck Script";
+	src: url("fonts/MarckScript-Regular.ttf") format("truetype");
+}
+@font-face {
+	font-family: "Amatic SC";
+	font-weight: 400;
+	src: url("fonts/AmaticSC-Regular.ttf") format("truetype");
+}
+@font-face {
+	font-family: "Amatic SC";
+	font-weight: 700;
+	src: url("fonts/AmaticSC-Bold.ttf") format("truetype");
+}
+@font-face {
+	font-family: "Lobster";
+	src: url("fonts/Lobster-Regular.ttf") format("truetype");
+}
+@font-face {
+	font-family: "Montserrat";
+	src: url("fonts/Montserrat-Regular.ttf") format("truetype");
+}
+@font-face {
+	font-family: "Times New Roman";
+	src: url("fonts/Times New Roman.ttf") format("truetype");
+}
+@font-face {
+	font-family: "Mr De Haviland";
+	src: url("fonts/MrDeHaviland-Regular.ttf") format("truetype");
+}
+@font-face {
+	font-family: "Cormorant Garamond Light Italic";
+	src: url("fonts/CormorantGaramond-LightItalic.ttf") format("truetype");
+}
+@font-face {
+	font-family: "Open Sans Condensed Light";
+	src: url("fonts/OpenSansCondensed-Light.ttf") format("truetype");
+}
+
+*, *::before, *::after {
+	margin: 0;
+	padding: 0;
+	font-size: 0;
+
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+img {
+	user-select: none;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	width: 980px;
+}
+
+/* Header */
+
+header {
+	display: flex;
+	justify-content: center;
+	background-color: rgb(247, 245, 241);
+}
+
+/* Top header content */
+
+.top-header-content {
+	display: flex;
+	justify-content: space-between;
+	padding-top: 10px;
+}
+
+/* Logo */
+
+.top-header-content .logo-wrapper img {
+	width: 155px;
+}
+
+/* Header top central block */
+
+.top-header-content .central-content {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.central-content img {
+	border-radius: 50%;
+	margin-bottom: 15px;
+}
+
+.central-content h1 {
+	font-family: "Marck Script", serif;
+	font-size: 18px;
+	font-weight: 400;
+}
+.central-content h1 .small {
+	font-size: 15px;
+}
+
+/* Header top "contact me" block */
+
+.contact-me {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-top: 10px;
+}
+.contact-me h3 {
+	font-family: "Amatic SC", serif;
+	font-size: 18px;
+	font-weight: 700;
+	letter-spacing: 0.1em;
+	margin-bottom: 30px;
+}
+
+/* Contacts inner block */
+
+.contacts {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 160px;
+	border-radius: 13px;
+	background-color: rgb(198, 187, 151, 0.75);
+}
+.contacts .number {
+	font-family: "Lobster", serif;
+	font-size: 14px;
+	font-style: normal;
+	letter-spacing: 0.03em;
+	color: rgb(75, 67, 41);
+}
+.contacts span {
+	font-family: "Amatic SC", serif;
+	font-size: 11px;
+}
+
+.contacts .apps img:first-child {
+	margin-right: 25px;
+}
+
+
+
+/* Navigation */
+
+nav {
+	display: flex;
+	justify-content: center;
+	padding: 26px;
+	margin: 5px 0;
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+}
+
+/* Navigation links */
+
+nav a {
+	font-family: "Montserrat", sans-serif;
+	font-size: 14px;
+	line-height: 100%;
+	color: rgb(25, 25, 25);
+	text-decoration: none;
+}
+nav a:not(:last-child) {
+	margin-right: 20px;
+}
+
+/* Main section */
+
+main {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: rgb(239, 236, 226);
+}
+
+/* Main section slideshow */
+
+.slideshow {
+	display: flex;
+	justify-content: center;
+	padding: 25px 0;
+}
+@keyframes slides {
+	0% {background-image: url("images/slide-1.jpg");}
+	16% {background-image: url("images/slide-2.jpg");}
+	32% {background-image: url("images/slide-2.jpg");}
+	48% {background-image: url("images/slide-3.jpg");}
+	64% {background-image: url("images/slide-3.jpg");}
+	80% {background-image: url("images/slide-1.jpg");}
+	100% {background-image: url("images/slide-1.jpg");}
+}	
+.slideshow .slides {
+	width: 575px;
+	height: 368px;
+	background-image: url("images/slide-1.jpg");
+	animation: slides 12s linear 3s infinite;
+	box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.5);
+}
+
+/* Tagline */
+
+.tagline-wrapper {
+	display: flex;
+	justify-content: center;
+	padding: 30px 0;
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+}
+.tagline-wrapper span {
+	font-family: "Times New Roman", serif;
+	font-size: 28px;
+	color: #000;
+}
+.tagline .bold {
+	font-family: "Mr De Haviland", serif;
+}
+
+/* Advantages */
+
+.advantages {
+	display: flex;
+	justify-content: space-around;
+	padding: 70px 0 100px 0;
+	border-bottom: 1px solid black;
+}
+.advantage {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	max-width: 270px;
+}
+.advantage .advantage-icon {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 200px;
+	height: 200px;
+	background-color: rgb(198, 187, 151);
+	border-radius: 40px;
+	margin-bottom: 25px;
+}
+.advantage span {
+	font-family: "Marck Script", serif;
+	font-size: 18px;
+}
+
+/* Main footer */
+
+.main-footer {
+	padding: 30px 0 60px 30px;
+}
+.main-footer div {
+	max-width: 250px;
+}
+.main-footer div p, .main-footer-link {
+	font-family: "Cormorant Garamond Light Italic", serif;
+	font-size: 24px;
+	line-height: 1.5em;
+}
+.main-footer-link {
+	color: black;
+	text-decoration: none;
+	font-weight: 700;
+}
+
+
+/* Footer */
+
+footer {
+	display: flex;
+	justify-content: center;
+	background-color: rgb(247, 245, 241);
+}
+footer .container {
+	flex-direction: row;
+	justify-content: space-between;
+	padding: 50px 4% 55px 1%;
+}
+
+/* Footer text information */
+
+.footer-info .copyright {
+	font-family: "Montserrat", sans-serif;
+	font-size: 14px;
+	display: inline-block;
+	margin-bottom: 20px;
+}
+.footer-info address {
+	font-family: "Open Sans Condensed Light", sans-serif;
+	font-size: 16px;
+	font-style: normal;
+}
+
+/* Footer contacts */
+
+footer .apps img:first-child {
+	margin-right: 10px;
+}
