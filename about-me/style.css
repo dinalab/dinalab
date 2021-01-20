@@ -1,0 +1,205 @@
+@font-face {
+	font-family: "Marck Script";
+	src: url("../fonts/MarckScript-Regular.ttf") format("truetype");
+}
+@font-face {
+	font-family: "Amatic SC";
+	font-weight: 400;
+	src: url("../fonts/AmaticSC-Regular.ttf") format("truetype");
+}
+@font-face {
+	font-family: "Amatic SC";
+	font-weight: 700;
+	src: url("../fonts/AmaticSC-Bold.ttf") format("truetype");
+}
+@font-face {
+	font-family: "Lobster";
+	src: url("../fonts/Lobster-Regular.ttf") format("truetype");
+}
+@font-face {
+	font-family: "Montserrat";
+	src: url("../fonts/Montserrat-Regular.ttf") format("truetype");
+}
+@font-face {
+	font-family: "Open Sans Condensed Light";
+	src: url("../fonts/OpenSansCondensed-Light.ttf") format("truetype");
+}
+
+*, *::before, *::after {
+	margin: 0;
+	padding: 0;
+	font-size: 0;
+
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+img {
+	user-select: none;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	width: 980px;
+}
+
+/* Header */
+
+header {
+	display: flex;
+	justify-content: center;
+	background-color: rgb(247, 245, 241);
+}
+
+/* Top header content */
+
+.top-header-content {
+	display: flex;
+	justify-content: space-between;
+	padding-top: 10px;
+}
+
+/* Logo */
+
+.top-header-content .logo-wrapper img {
+	width: 155px;
+}
+
+/* Header top central block */
+
+.top-header-content .central-content {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.central-content img {
+	border-radius: 50%;
+	margin-bottom: 15px;
+}
+
+.central-content h1 {
+	font-family: "Marck Script", serif;
+	font-size: 18px;
+	font-weight: 400;
+}
+.central-content h1 .small {
+	font-size: 15px;
+}
+
+/* Header top "contact me" block */
+
+.contact-me {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-top: 10px;
+}
+.contact-me h3 {
+	font-family: "Amatic SC", serif;
+	font-size: 18px;
+	font-weight: 700;
+	letter-spacing: 0.1em;
+	margin-bottom: 30px;
+}
+
+/* Contacts inner block */
+
+.contacts {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 160px;
+	border-radius: 13px;
+	background-color: rgb(198, 187, 151, 0.75);
+}
+.contacts .number {
+	font-family: "Lobster", serif;
+	font-size: 14px;
+	font-style: normal;
+	letter-spacing: 0.03em;
+	color: rgb(75, 67, 41);
+}
+.contacts span {
+	font-family: "Amatic SC", serif;
+	font-size: 11px;
+}
+
+.contacts .apps img:first-child {
+	margin-right: 25px;
+}
+
+
+
+/* Navigation */
+
+nav {
+	display: flex;
+	justify-content: center;
+	padding: 26px;
+	margin: 5px 0;
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+}
+
+/* Navigation links */
+
+nav a {
+	font-family: "Montserrat", sans-serif;
+	font-size: 14px;
+	line-height: 100%;
+	color: rgb(25, 25, 25);
+	text-decoration: none;
+}
+nav a:not(:last-child) {
+	margin-right: 20px;
+}
+
+/* Main section */
+
+main {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: rgb(239, 236, 226);
+}
+
+
+
+
+
+
+/* Footer */
+
+footer {
+	display: flex;
+	justify-content: center;
+	background-color: rgb(247, 245, 241);
+}
+footer .container {
+	flex-direction: row;
+	justify-content: space-between;
+	padding: 50px 4% 55px 1%;
+}
+
+/* Footer text information */
+
+.footer-info .copyright {
+	font-family: "Montserrat", sans-serif;
+	font-size: 14px;
+}
+.footer-info address {
+	font-family: "Open Sans Condensed Light", sans-serif;
+	font-size: 16px;
+	font-style: normal;
+	margin-top: 20px;
+}
+
+/* Footer contacts */
+
+footer .apps img:first-child {
+	margin-right: 10px;
+}
