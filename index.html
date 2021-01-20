@@ -5,13 +5,14 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>DinaLab</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
 </head>
 <body>
 	<header>
 		<div class="container">
 			<div class="top-header-content">
 				<div class="logo-wrapper">
-					<img src="images/logo.png" alt="" draggable="false">
+					<img src="images/logo.png" alt="Логотип DinaLab" draggable="false">
 				</div>
 
 				<div class="central-content">
@@ -29,16 +30,16 @@
 						<span>или</span>
 
 						<div class="apps">
-							<img src="images/whatsapp-icon.png" alt="Whatsapp app icon" draggable="false">
-							<img src="images/mail-icon.png" alt="Mail app icon" draggable="false">
+							<img src="images/whatsapp-icon.png" alt="Иконка приложения Whatsapp" draggable="false">
+							<img src="images/mail-icon.png" alt="Иконка почтового приложения" draggable="false">
 						</div>
 					</div>
 				</div>
 			</div>
 
 			<nav>
-				<a href="#">JERDKINA DINA</a>
-				<a href="#">Услуги</a>
+				<a href="/">JERDKINA DINA</a>
+				<a href="services/">Услуги</a>
 				<a href="#">Обо мне</a>
 				<a href="#">Отзывы</a>
 			</nav>
@@ -47,7 +48,7 @@
 	<main>
 		<div class="container">
 			<div class="slideshow">
-				<div class="slides"></div>
+				<div class="slides csa-head"></div>
 			</div>
 
 			<div class="tagline-wrapper">
@@ -94,10 +95,78 @@
 			</div>
 
 			<div class="apps">
-				<img src="images/whatsapp-icon.png" alt="Whatsapp app icon" draggable="false">
-				<img src="images/mail-icon.png" alt="Mail app icon" draggable="false">
+				<img src="images/whatsapp-icon.png" alt="Иконка приложения Whatsapp" draggable="false">
+				<img src="images/mail-icon.png" alt="Иконка почтового приложения" draggable="false">
 			</div>
 		</div>
 	</footer>
+
+
+
+
+
+
+
+
+	<script>
+		let imgHead = [
+		 	"images/slide-1.jpg",
+		 	"images/slide-2.jpg",
+		 	"images/slide-3.jpg",
+		];
+		let i = 1;
+
+	    function csaHead(){
+	        if(i > (imgHead.length-1)){
+	            $('.csa-head').animate({'opacity':'0.5'},500,function(){
+	                i=1;
+	                $('.csa-head').css({'background':'url('+imgHead[0]+')'});
+	            });
+	            $('.csa-head').animate({'opacity':'1'},500);
+	        }else{
+	            $('.csa-head').animate({'opacity':'0.5'},500,function(){
+	                $('.csa-head').css({'background':'url('+imgHead[i]+')'});
+	                i++;
+	            });
+	            $('.csa-head').animate({'opacity':'1'},500);
+	        }
+	    }
+	    var intervalCsaHead = setInterval(csaHead, 5000);
+
+	    
+		// document.addEventListener("DOMContentLoaded", function() {
+		// 	let slides = document.querySelector(".slides");
+		// 	let slideIndex = 0;
+		// 	let transitionDuration = Number(getComputedStyle(slides).transitionDuration[0] + "000");
+		// 	let delay = 3000 + transitionDuration;
+		// 	console.log(delay);
+		// 	let isFirst = false;
+
+		// 	let images = [
+		// 		"url('images/slide-2.jpg')",
+		// 		"url('images/slide-3.jpg')",
+		// 		"url('images/slide-1.jpg')",
+		// 	];
+
+		// 	function changeBackground() {
+		// 		slides.style.opacity = 0.9;
+		// 	}
+
+		// 	slides.addEventListener("transitionend", function() {
+		// 		isFirst = !isFirst;
+		// 		if(!isFirst) return;
+
+		// 		slides.style.backgroundImage = images[slideIndex++];
+		// 		console.log(isFirst);
+		// 		slides.style.opacity = 1;
+
+		// 		if(slideIndex === images.length) return;
+
+		// 		setTimeout(changeBackground, delay);
+		// 	});
+
+		// 	setTimeout(changeBackground, delay - transitionDuration);
+		// });
+	</script>
 </body>
 </html>

@@ -186,22 +186,23 @@ main {
 	justify-content: center;
 	padding: 25px 0;
 }
-@keyframes slides {
-	0% {background-image: url("images/slide-1.jpg"), url("images/slide-1.jpg"), url("images/slide-2.jpg");}
-	16% {background-image: url("images/slide-2.jpg"), url("images/slide-2.jpg");}
-	32% {background-image: url("images/slide-2.jpg"), url("images/slide-3.jpg");}
-	48% {background-image: url("images/slide-3.jpg"), url("images/slide-3.jpg");}
-	64% {background-image: url("images/slide-3.jpg"), url(images/slide-1.jpg);}
-	80% {background-image: url("images/slide-1.jpg"), url(images/slide-1.jpg);}
-	100% {background-image: url("images/slide-1.jpg"), url(images/slide-1.jpg);}
-}	
+/*@keyframes slides {
+	0% {}
+	16% {background-image: url("images/slide-2.jpg")}
+	32% {background-image: url("images/slide-2.jpg")}
+	48% {background-image: url("images/slide-3.jpg")}
+	64% {background-image: url("images/slide-3.jpg")}
+	80% {background-image: url("images/slide-1.jpg")}
+	100% {background-image: url("images/slide-1.jpg")}
+}*/
 .slideshow .slides {
 	width: 575px;
 	height: 368px;
-	background-image: url("images/slide-1.jpg"), url("images/slide-2.jpg"), url("images/slide-3.jpg");
-	animation: slides 12s linear 3s infinite;
+	background-color: red;
+	background: url("images/slide-1.jpg");
+/*	animation: slides 12s linear 3s infinite;
 	-moz-animation: slides 12s linear 3s infinite;
-	-webkit-animation: slides 12s linear 3s infinite;
+	-webkit-animation: slides 12s linear 3s infinite;*/
 	box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.5);
 }
 
@@ -221,6 +222,7 @@ main {
 }
 .tagline .bold {
 	font-family: "Mr De Haviland", serif;
+	font-weight: bold;
 }
 
 /* Advantages */
@@ -268,9 +270,12 @@ main {
 }
 .main-footer-link {
 	color: black;
-	text-decoration: none;
 	font-weight: 700;
 }
+
+
+
+
 
 
 /* Footer */
