@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -120,12 +120,12 @@
 	        if(i > (imgHead.length-1)){
 	            $('.csa-head').animate({'opacity':'0.5'},500,function(){
 	                i=1;
-	                $('.csa-head').css({'background':'url('+imgHead[0]+')'});
+	                $('.csa-head').css({'backgroundImage':'url('+imgHead[0]+')'});
 	            });
 	            $('.csa-head').animate({'opacity':'1'},500);
 	        }else{
 	            $('.csa-head').animate({'opacity':'0.5'},500,function(){
-	                $('.csa-head').css({'background':'url('+imgHead[i]+')'});
+	                $('.csa-head').css({'backgroundImage':'url('+imgHead[i]+')'});
 	                i++;
 	            });
 	            $('.csa-head').animate({'opacity':'1'},500);
