@@ -303,7 +303,7 @@ footer .apps img:first-child {
 
 /* All screen resolutions */
 
-@media screen and (max-width: 1040px) {
+@media screen and (max-width: 1039px) {
 	.container {
 		width: 740px;
 	}
@@ -412,7 +412,7 @@ footer .apps img:first-child {
 		font-size: 15px;
 	}
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 799px) {
 	.container {
 		width: 540px;
 	}
@@ -537,7 +537,7 @@ footer .apps img:first-child {
 		font-size: 13px;
 	}
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 599px) {
 	.container {
 		width: 390px;
 	}
@@ -667,7 +667,7 @@ footer .apps img:first-child {
 		margin-top: 15px;
 	}
 }
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 449px) {
 	.container {
 		width: 260px;
 	}
