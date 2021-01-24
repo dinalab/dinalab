@@ -746,7 +746,7 @@ footer .apps img:first-child {
 	/* Tagline */
 
 	.tagline-wrapper {
-		padding: 10px;
+		padding: 10px 0;
 	}
 	.tagline-wrapper span {
 		font-size: 14px;
