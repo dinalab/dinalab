@@ -94,9 +94,6 @@ header {
 	font-size: 18px;
 	font-weight: 400;
 }
-.central-content h1 .small {
-	font-size: 15px;
-}
 
 /* Header top "contact me" block */
 
@@ -159,8 +156,11 @@ nav a {
 	font-family: "Montserrat", sans-serif;
 	font-size: 14px;
 	line-height: 100%;
-	color: rgb(25, 25, 25);
+	color: #000;
 	text-decoration: none;
+}
+nav a[href="./"] {
+	color: rgb(25, 25, 25);
 }
 nav a:not(:last-child) {
 	margin-right: 20px;

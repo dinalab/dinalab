@@ -98,9 +98,6 @@ header {
 	font-size: 18px;
 	font-weight: 400;
 }
-.central-content h1 .small {
-	font-size: 15px;
-}
 
 /* Header top "contact me" block */
 
@@ -163,8 +160,11 @@ nav a {
 	font-family: "Montserrat", sans-serif;
 	font-size: 14px;
 	line-height: 100%;
-	color: rgb(25, 25, 25);
+	color: #000;
 	text-decoration: none;
+}
+nav a[href="./"] {
+	color: rgb(25, 25, 25);
 }
 nav a:not(:last-child) {
 	margin-right: 20px;
@@ -186,23 +186,10 @@ main {
 	justify-content: center;
 	padding: 25px 0;
 }
-/*@keyframes slides {
-	0% {}
-	16% {background-image: url("images/slide-2.jpg")}
-	32% {background-image: url("images/slide-2.jpg")}
-	48% {background-image: url("images/slide-3.jpg")}
-	64% {background-image: url("images/slide-3.jpg")}
-	80% {background-image: url("images/slide-1.jpg")}
-	100% {background-image: url("images/slide-1.jpg")}
-}*/
 .slideshow .slides {
 	width: 575px;
 	height: 368px;
-	background-color: red;
 	background: url("images/slide-1.jpg");
-/*	animation: slides 12s linear 3s infinite;
-	-moz-animation: slides 12s linear 3s infinite;
-	-webkit-animation: slides 12s linear 3s infinite;*/
 	box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.5);
 }
 
@@ -218,11 +205,12 @@ main {
 .tagline-wrapper span {
 	font-family: "Times New Roman", serif;
 	font-size: 28px;
-	color: #000;
+	color: rgb(71, 71, 71);
 }
-.tagline .bold {
+.tagline-wrapper .bold {
 	font-family: "Mr De Haviland", serif;
 	font-weight: bold;
+	color: #000;
 }
 
 /* Advantages */
