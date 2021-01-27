@@ -186,6 +186,7 @@ main h1 {
 }
 .review {
 	border-bottom: 2px solid rgb(209, 207, 197);
+	width: 100%;
 }
 .review-author-info {
 	display: flex;
